@@ -1,0 +1,23 @@
+{
+  "name": "i-note-you-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "dev:user": "npm run dev --workspace=i-note-you-user-liff",
+    "dev:teacher": "npm run dev --workspace=i-note-you-teacher-liff",
+    "build:user": "npm run build --workspace=i-note-you-user-liff",
+    "build:teacher": "npm run build --workspace=i-note-you-teacher-liff",
+    "install:user": "npm i --workspace=i-note-you-user-liff",
+    "install:teacher": "npm i --workspace=i-note-you-teacher-liff",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lu-Yun-Cheng",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}
